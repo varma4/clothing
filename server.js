@@ -17,6 +17,9 @@ const loginRouter = require('./router/loginRouter')
 app.use('/', productRouter)
 app.use('/', cartRouter)
 app.use('/', loginRouter)
+app.get('/jobs', (req, res) => {
+    return res.status(200).json('scheduledJobs');
+  });
 app.listen(3000, () => {
     console.log(`listening on port ${port}`);
 })
