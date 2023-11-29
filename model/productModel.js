@@ -17,6 +17,10 @@ productSchema = new mongoose.Schema({
         type: String,
         required: [true, 'Product must have a type']
     },
+    gender:{
+        type: String,
+        required: [true, 'Product must have a gender']
+    },
     quantity: {
         type: Number,
         required: [true, 'Product must have a quantity']
